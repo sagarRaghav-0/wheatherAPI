@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link media="all" rel="stylesheet" href="style.css">
+    <link media="all" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Wheather App</title>
+    <meta name="description"
+        content="A weather app that provides real-time weather information, including temperature, humidity, wind speed, and visibility. Search for locations and get accurate weather updates.">
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="video">
+            <video autoplay muted loop id="myVideo" preload="auto">
+                <source src="./video/snowing.mp4 " type="video/mp4">
+            </video>
+        </div>
+        <div class="time"> 0:00 </div>
+
+
+
+        <div class="col-12 search-box tac">
+            <form name="weather">
+                <img src="./img/location.webp" alt="location icon" loading="lazy" aria-label="location icon">
+                <label><input type="search" name="query" required placeholder="Search for location"></label>
+                <button><img src="./img/search.webp" alt="search icon" loading="lazy" aria-label="search-icon"></button>
+
+            </form>
+
+
+        </div>
+
+        <div class="weather-box">
+            <div class="box">
+                <div class="info--weather">
+                    <div class="weather">
+
+                        <p class="temperature">0<span>°C</span></p>
+                        <p class="description">Broken Clouds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="bx bx-water"></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+
+                    </div>
+
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="bx bx-wind"></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0 Km/h</span>
+
+                    </div>
+
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+
+
+            <div class="feels">
+                <i class="bx bxs-hot"></i>
+                <div class="text">
+                    <div class="info-feels">
+                        <span>0</span>
+
+                    </div>
+
+                    <p>Feels-like</p>
+                </div>
+            </div>
+            <div class="visibility">
+                <i class="bx bxs-low-vision"></i>
+                <div class="text">
+                    <div class="info-visibility">
+                        <span>0 </span>
+
+                    </div>
+
+                    <p> visibility</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="not-found">
+            <img src="./img/404.webp" alt="image for error" loading="lazy">
+            <p>Ooops! Location not found</p>
+        </div>
+
+    </div>
+
+    <script async src="./main.js"></script>
+</body>
+
+</html>
